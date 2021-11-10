@@ -1,0 +1,516 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #183b56;
+}
+
+/* STYLES GLOBAL*/
+
+/* button style */
+.btn {
+  font-weight: 600;
+  border: 2px solid transparent;
+  padding: 0.5rem 2rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f1633a;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #36b37e;
+}
+
+.btn-outline-primary {
+  color: #f1633a;
+  border-color: #f1633a;
+}
+.btn-outline-primary:hover {
+  background-color: #f1633a;
+  border-color: #f1633a;
+}
+.btn-outline-secondary {
+  color: #0f1f2b;
+  border-color: #0f1f2b;
+}
+.btn-outline-secondary:hover {
+  background-color: #0f1f2b;
+  border-color: #0f1f2b;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #183b56;
+}
+.btn-outline-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-outline-white:hover {
+  background-color: #ffffff40;
+  color: #fff;
+}
+.btn-rounded {
+  border-radius: 2rem;
+}
+
+/* text style */
+h2.title-section {
+  color: #183b56;
+  font-weight: 700;
+  font-size: 32px;
+}
+p.lead {
+  color: #5a7184;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.text-primary {
+  color: #f1633a !important;
+}
+
+/* form style */
+label {
+  font-weight: 500;
+  color: #5a7184;
+}
+.form-row,
+.form-group {
+  margin-bottom: 1.5rem;
+}
+input.form-control:focus {
+  border-color: red;
+  box-shadow: none;
+}
+
+/* NAVBAR */
+.navbar-nav .active > .nav-link {
+  color: #f1633a !important;
+}
+.navbar-nav .nav-link {
+  color: #0f1f2b !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #f1633a !important;
+}
+
+/* FOOTER */
+footer {
+  background-color: #eceff2;
+  padding: 3rem 0;
+}
+footer ul.list-group a,
+footer ul.list-group li {
+  border: 0;
+  background-color: transparent;
+}
+footer ul.list-group li.title {
+  font-weight: 600;
+}
+footer .links a {
+  background-color: #5b718421;
+  padding: 0.8rem;
+  border-radius: 10rem;
+  color: #5a7184;
+  margin-right: 0.5rem;
+}
+
+/* header de page */
+header.header-page {
+  padding: 3rem 0;
+  background-image: url("./img/back-header-page.png");
+  background-position: 0 -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+/* HOMEPAGE */
+
+/* header */
+header.homepage {
+  padding: 2rem 0;
+  background-color: #eceff2;
+  background-image: url("./img/back-header.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  max-height: 400px;
+  margin-bottom: 300px;
+}
+@media screen and (max-width: 640px) {
+  header {
+    padding: 2rem 0;
+  }
+}
+
+header h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+header h1 span {
+  color: #f1633a;
+}
+header .card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 1px 6px 5px #0000000f;
+  padding: 1.5rem;
+  width: 47%;
+  overflow: hidden;
+  z-index: 2;
+}
+@media screen and (max-width: 640px) {
+  header .card {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+header .card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+header .porteur {
+  background-image: url("./img/back-porteurs.png");
+  background-position: top left;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+header .candidat {
+  background-image: url("./img/back-candidat.png");
+  background-position: top right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.custom-shape {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape img {
+  width: 100%;
+}
+
+/* avantages */
+section.avantages {
+  margin: 50px 0;
+}
+.avantages li.list-group-item {
+  border: 0;
+  flex: 1 1 33%;
+}
+.avantages li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.avantages li h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #183b56;
+}
+.avantages li p {
+  font-size: 14px;
+}
+
+/* projets */
+section.projets {
+  background-color: #eceff2;
+  padding: 3rem 0;
+}
+a.projet {
+  flex: 1 1 33%;
+  margin-bottom: 2rem;
+}
+
+.card-projet {
+  position: relative;
+  margin: 0 1.5rem;
+  border: 0;
+}
+a.premium-projet .card-projet {
+  border: 2px solid #f1633a;
+}
+a.projet .card-projet .card-title {
+  color: #183b56;
+  margin-top: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+a.projet .card-projet {
+  color: #312f2f;
+}
+a.projet:hover {
+  text-decoration: none !important;
+}
+
+.card-projet .img-projet {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #f5f5f5;
+}
+.card-projet .img-projet img {
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.card-projet .tag {
+  font-size: 14px;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background-color: #e954323d;
+  color: #183b56;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+.card-projet .tag i {
+  color: #f1633a;
+  font-size: 10px;
+}
+
+.card-projet .items p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.5;
+  color: #312f2f;
+}
+
+/* candidats */
+section.candidats {
+  padding: 3rem 0;
+}
+a.candidat {
+  flex: 1 1 33%;
+  margin-bottom: 2rem;
+}
+
+.card-candidat,
+.card-actu {
+  position: relative;
+  margin: 0 1.5rem;
+}
+a.premium-candidat .card-candidat {
+  border: 2px solid #36b37e;
+}
+a.candidat .card-candidat .card-title {
+  color: #183b56;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+a.candidat .card-candidat {
+  color: #312f2f;
+}
+a.candidat:hover,
+a.actu:hover {
+  text-decoration: none !important;
+}
+.card-candidat .img-candidat,
+.temoignage .bloc-image {
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #f5f5f5;
+  border-radius: 10rem;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #f5f5f5;
+  margin-right: 1rem;
+}
+.card-candidat .img-candidat img,
+.temoignage .bloc-image img {
+  width: 80px;
+  height: 80px;
+}
+.card-candidat p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.5;
+  color: #312f2f;
+}
+
+/* temoignages */
+section.temoignages {
+  background-color: #eceff2;
+  padding: 3rem 0;
+}
+.temoignage p {
+  font-size: 12px;
+  color: #183b56;
+  line-height: 2;
+}
+.temoignage {
+  width: 50%;
+}
+@media screen and (max-width: 640px) {
+  .temoignage {
+    width: 100%;
+  }
+}
+
+.carousel-temoignage i {
+  color: #183b56;
+  font-size: 2rem;
+}
+
+.carousel-temoignage .carousel-control-next,
+.carousel-temoignage .carousel-control-prev {
+  top: 0;
+  bottom: auto;
+}
+.carousel-temoignage .carousel-control-next {
+  right: 0;
+}
+.carousel-temoignage .carousel-control-prev {
+  right: 2rem;
+}
+
+/* conseils */
+.conseils i.blue {
+  color: #00b8d9;
+}
+.conseils i.yellow {
+  color: #faad13;
+}
+.conseils i.blue-dark {
+  color: #3f598a;
+}
+.conseils i.green {
+  color: #36b37e;
+}
+.conseils i.blue-secondary {
+  color: #1565d8;
+}
+.conseils i.red {
+  color: #e95432;
+}
+.conseils .card-title {
+  font-size: 18px !important;
+  font-weight: 400;
+}
+.conseils .card {
+  border-color: #e5eaf4;
+  border-radius: 1rem;
+  height: 138px;
+  overflow: hidden;
+  box-shadow: 1px 6px 5px #0000000f;
+}
+
+/*semantique*/
+.semantique p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* actualites */
+a.actu {
+  flex: 1 1 25%;
+  transition: all 0.3s ease;
+}
+a.actu .card-actu {
+  border: 0;
+}
+a.actu .card-actu .card-title {
+  color: #183b56;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+a.actu .card-actu .card-text {
+  font-size: 60%;
+  color: #5a7184;
+}
+
+a.actu:hover .card-title {
+  color: #f1633a;
+}
+
+/* cta */
+section.cta {
+  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: #f1633a;
+  background-image: url("./img/back-cta.png");
+  background-size: cover;
+  background-position: 0px -90px;
+  background-repeat: no-repeat;
+}
+section.cta h6 {
+  font-size: 36px;
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .cta .text-right,
+  .cta .text-left {
+    text-align: center !important;
+  }
+  .cta button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/******* PAGE INSCRIPTION **********/
+.form-inscription {
+  padding-top: 3rem;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.form-inscription .card {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 17px #00000026;
+  border: 0;
+  padding: 1.5rem;
+  z-index: 2;
+}
+.form-inscription img.porteur,
+.form-inscription img.candidat {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+}
+.form-inscription img.porteur {
+  left: -10px;
+}
+.form-inscription img.candidat {
+  right: -10px;
+}
+
+/******* PAGE A PROPOS **********/
+section.fondateurs {
+  background-color: #eceff2;
+  padding: 3rem 0;
+  position: relative;
+}
+section.fondateurs img.illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section.ambition {
+  padding: 3rem 0;
+}
+section.ambition li {
+  border: 0;
+  font-weight: bold;
+}
+section.ambition i {
+  color: #36b37e;
+  font-size: 1.5rem;
+}
